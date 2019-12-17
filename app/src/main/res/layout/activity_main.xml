@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ontime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Time Alarm"
+        android:textStyle="bold"
+        android:textSize="18sp"
+         />
+    <Button
+        android:id="@+id/btn_one_time_alarm_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DatePicker"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ontime"/>
+    <TextView
+        android:id="@+id/tv_one_time_alarm_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="......"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/btn_one_time_alarm_date"
+        android:layout_below="@+id/ontime"/>
+    <Button
+        android:id="@+id/btn_one_time_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimePicker"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_one_time_alarm_date"/>
+    <TextView
+        android:id="@+id/tv_one_time_alarm_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="......"
+        android:layout_marginTop="45dp"
+        android:layout_toEndOf="@+id/btn_one_time_alarm_time"
+        android:layout_below="@+id/tv_one_time_alarm_date"/>
+    <EditText
+        android:id="@+id/et_one_time_alarm_mesage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesan Alarm"
+        android:layout_below="@+id/btn_one_time_alarm_time"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_setalarm_onetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set On Time Alarm"
+        android:layout_below="@+id/et_one_time_alarm_mesage"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/repeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeating Alarm"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/btn_setalarm_onetime"
+        android:layout_marginTop="20dp"
+        />
+    <Button
+        android:id="@+id/btn_repeating_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimePicker"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/repeating"/>
+    <TextView
+        android:id="@+id/tv_repeating_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="....."
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/btn_repeating_time"
+        android:layout_below="@+id/repeating"/>
+    <EditText
+        android:id="@+id/et_repeating_alarm_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pesan Alarm"
+        android:layout_below="@+id/btn_repeating_time"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_setrepeating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Repeating Alarm"
+        android:layout_below="@+id/et_repeating_alarm_message"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_batal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batal"
+        android:layout_below="@+id/et_repeating_alarm_message"
+        android:layout_toEndOf="@+id/btn_setrepeating"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
